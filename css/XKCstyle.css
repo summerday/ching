@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+/* XKC - Home page presentatoin */
+#container {
+	position:relative; 
+	width:980px; 
+	margin-left: auto; 
+	margin-right: auto;
+	/*
+	color: white;
+	*/
+	text-align: left;
+	
+	/**
+	background-color:rgb(100,0,0); 
+	background-image:url(http://media.shopatron.com/media/mfg/11928/design_content/0/floral-bg_01.jpg); 
+
+	background-attachment:scroll; 
+	background-position:left top; 
+	background-repeat:no-repeat; 
+	background-size:auto auto; 
+	**/
+	border-radius: 5px;
+	border-color:#453133; 
+	border-style:solid; 
+	border-width:5px;
+}
+
+#header {
+	position:relative;
+	width:100%; 
+	height:120px;
+	background-color: #FFFFFF;
+	/*
+	background-color:#3672a7;  /* blue-ish */
+	*/
+	clear:both;   /* no floating elements allowed on both side if this element. */
+	text-align:left;
+}
+
+#header #logo {
+	position: absolute;
+	top: 25px;
+	left: 15px;
+}
+#header #logo .img {
+	width:100%;
+	height:80%
+	align:bottom;
+}
+
+#header #cart {
+	position: absolute;
+	top: 0px;
+	right: 160px;
+	z-index: 9;
+	min-width: 250px;
+}
+
+#header #cart .heading {
+	position: relative;
+	float: left;
+	z-index: 1;
+	
+	background-color: #FFF;
+	margin-right: 172px;
+	margin-top: 15px;
+	
+	padding-left: 14px;
+	padding-right: 14px;
+	
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #EEEEEE;
+}
+
+#header #cart .heading h4 {
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+#header #cart .heading a{
+	color: #2234E2;
+	text-decoration: none;
+}
+
+#header #cart .heading a span {
+	background: #FFFFFF url('../images/arrow-down.png') 100% 50% no-repeat;
+	padding-right: 30px;
+}
+
+#header #cart .content {
+	position: relative;
+	clear: both;
+	display: none;
+	
+	top: -1px;
+	padding: 8px;
+	min-height: 80px;
+	
+	border-top: 1px solid #EEEEEE;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+#header #cart:active .content {
+	display: block;
+}
+
+#header #cart:active .heading {
+	border-top: 1px solid #EEEEEE;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+}
+
+#header #cart .empty {
+	padding: 25px;
+	text-align: center;
+}
+
+#header #search {
+	position: absolute;
+	top: 18px; 
+	right: 5px;
+	width: 300px;
+	z-index: 15;
+}
+
+#header #search .button-search {
+	position: absolute;
+	left: 0px;
+	background: url('../images/search-button.png') center center no-repeat;
+	width: 28px;
+	height: 24px;
+	border-right: 1px solid #CCCCCC;
+	cursor: pointer;
+}
+
+#header #search input {
+	padding: 1px 1px 1px 33px;
+	width: 250px;
+	height: 21px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+}
+
+#header #welcome {
+	position: absolute;
+	width: 298px;
+	top: 50px;
+	right: 0px;
+	z-index: 5;
+	text-align: left;
+	color: #999999;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	font-size: 14px;
+}
+
+#header #tlinks{
+	position: absolute;
+	right: 0px;
+	bottom: 3px;
+	font-size: 12px;
+	padding-right: 10px;
+}
+
+#header #tlinks a {
+	float: left;
+	display: block;
+	padding: 0px 0px 0px 7px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#header #tlinks a + a {
+	margin-left: 8px;
+	border-left: 1px solid #ccc;
+}
+
+	
+/**
+.headerLogo a span, .headerLogo a img { color:#fff; font-size:32px; float:left; }
+.headerLogo a span { margin:40px 30px 0; }
+**/
+
+
+#content {
+	width: 900px;
+	height: 400px;
+	margin-left: 30px;
+	margin-right: 25px;
+	
+	border-top: 1px solid #AAEEEE;
+	border-left: 1px solid #AAEEEE;
+	border-right: 1px solid #AAEEEE;
+	border-bottom: 1px solid #AAEEEE;
+}
+
+#contentleft {
+	float: left;
+	width: 250px;
+	height: 400px;
+	color: #555;
+	
+	min-height: 400px;
+	background-color: #EEE;
+}
+
+#contentright {
+	position: absolute;
+	left: 280px;
+	width: 650px;
+	color: #666;
+	
+	min-height: 400px;
+	background-color: #DDD;
+}
+
+#footer {
+	width: 100%;
+	padding-top: 3px;
+	background-color:#666666;
+	clear:both;
+	text-align:center;
+}
+
+/* CCS3 gradient property in wrapper div */
+#wrapper { 
+	width:100%; 
+	position:absolute;
+	
+	border-color:#453133; 
+	border-style:solid; 
+	border-width:2px;
+}
+
+#menu {
+  background-color: #EEEEFF;
+}
+
+/** drop-down menu style **/
+#navMenu {  
+    list-style-type:none;  /* remove the bullets */
+    width:95%;  
+    margin:0px auto 0px auto;  
+    height:33px;  
+    padding:0px 30px 0px 10px; 
+
+    /* Rounded Corners */  
+    -moz-border-radius: 10px;  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;  
+	
+    /* Background color and gradients */  
+    /*background: #014464; */
+	background: #439393;
+	
+	/*
+    background: -moz-linear-gradient(top, #0272a7, #013953);  
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0272a7), to(#013953));  
+	*/
+	
+    /* Borders */  
+    border: 1px solid #002232;  
+    -moz-box-shadow:inset 0px 0px 1px #edf9ff;  
+    -webkit-box-shadow:inset 0px 0px 1px #edf9ff;  
+    box-shadow:inset 0px 0px 1px #edf9ff;  
+}  
+
+#navMenu li {  
+    float:left;  
+    display:block;  
+    text-align:center;  
+    position:relative;  
+    padding: 4px 10px 4px 10px;  
+    margin-right:30px;  
+    margin-top:7px;  
+    border:2px;  
+}  
+#navMenu li:hover {  
+    border: 1px solid #777777;  
+    padding: 4px 9px 4px 9px;  
+    /* Background color and gradients */  
+    background: #F4F4F4;  
+    background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);  
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4), to(#EEEEEE));  
+    /* Rounded corners */  
+    -moz-border-radius: 5px 5px 0px 0px;  
+    -webkit-border-radius: 5px 5px 0px 0px;  
+    border-radius: 5px 5px 0px 0px;  
+}  
+#navMenu li a {  
+    font-family:Arial, Helvetica, sans-serif;  
+    font-size:14px;  
+    color: #EEEEEE;  
+    display:block;  
+    outline:0;  
+    text-decoration:none;  
+    text-shadow: 1px 1px 1px #000;  
+}  
+#navMenu li:hover a {  
+    color:#161616;  
+    text-shadow: 1px 1px 1px #FFFFFF;  
+}  
+
+
+#navMenu li .drop {  
+    padding-right:21px;  
+    background:url("../images/down-button.png") no-repeat rightright 8px;  
+} 
+
+
+/** end of Drop-down menu style **/
+
