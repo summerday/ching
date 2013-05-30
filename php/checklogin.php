@@ -17,7 +17,7 @@
 echo $sql . "<br>";
 
 
-	$result= $mysqldb->query($sql);
+	$result= $mysqli->query($sql);
 	$rowCount = $result->num_rows;
 
 echo "rowcount = " . $rowCount;
@@ -38,7 +38,7 @@ echo "rowcount = " . $rowCount;
 	   echo "<p>Login failed, user email or password incorrect.</p>";
 	   
 	   // close the connection
-	   $mysqldb->close(); 
+	   $mysqli->close(); 
 	}
 	
 ?>

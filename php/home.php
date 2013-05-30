@@ -8,7 +8,7 @@
   <div id="header"> 
 	<div id="logo">
 	  <a href="#">
-	    <img id="logoImg" src="images/xkc.jpg" alt="Xinkeco Global Logo" />
+	    <img id="logoImg" src="../images/xkc.jpg" alt="Xinkeco Global Logo" />
 	  </a>
 	</div>  <!-- closes logo -->
 	<div id="cart">

@@ -9,10 +9,10 @@
 	$db_name = 'XKCdb';
 	
 
-	$mysqldb = new mysqli($db_host, $db_user, $db_pass, $db_name); 
+	$mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name); 
 
-	if ($mysqldb->connect_errno) { 
-		printf('Connect failed: %s\n', $mysqldb->connect_error); 
+	if ($mysqli->connect_errno) { 
+		printf('Connect failed: %s\n', $mysqli->connect_error); 
 		exit();
 	}
 	else {

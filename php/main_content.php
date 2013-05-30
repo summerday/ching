@@ -7,7 +7,7 @@
 	</p>
 	</div>
 	<div id="contentright" width="600" height="380" style="float:left">
-	 <span><img src="images/girlwithballon.jpg" /> </span>
+	 <span><img src="../images/girlwithballon.jpg" /> </span>
 	</div>  
   </div>
   
